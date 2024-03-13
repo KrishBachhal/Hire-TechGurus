@@ -1,1 +1,14 @@
-self.__SSG_MANIFEST=new Set(["\u002F__challenge","\u002Finspiration","\u002Fpublished\u002F[docId]","\u002Fpublished_mobile\u002F[docId]","\u002Ftemplates","\u002Ftemplates\u002F[id]","\u002Ftemplates\u002Fcategories\u002F[categorySlug]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
+# Create a new set containing the following file paths:
+ssg_manifest = set([
+    "/__challenge",
+    "/inspiration",
+    "/published/{docId}",
+    "/published_mobile/{docId}",
+    "/templates",
+    "/templates/{id}",
+    "/templates/categories/{categorySlug}"
+])
+
+# If the callback function for the SSG manifest is defined, call it
+if __SSG_MANIFEST_CB is not None:
+    __SSG_MANIFEST_CB()
