@@ -9099,3 +9099,26 @@ Contact Us  - Krish.jatt4@gmail.com" property="twitter:description">
 </body>
 
 </html>
+import React from 'react';
+import { Popover, PopoverTrigger, PopoverContent, PopoverArrow, PopoverHeader, PopoverBody } from '@chakra-ui/react';
+
+const MyComponent = () => {
+  const popoverContent = (
+    <PopoverContent>
+      <PopoverArrow />
+      <PopoverHeader>Popover Title</PopoverHeader>
+      <PopoverBody>Popover content goes here</PopoverBody>
+    </PopoverContent>
+  );
+
+  return (
+    <Popover>
+      <PopoverTrigger>
+        <button>Trigger</button>
+      </PopoverTrigger>
+      {ReactDOM.createPortal(popoverContent, document.body)}
+    </Popover>
+  );
+};
+
+export default MyComponent;
