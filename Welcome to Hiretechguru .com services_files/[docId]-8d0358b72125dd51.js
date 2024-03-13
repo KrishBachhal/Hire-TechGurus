@@ -1,2 +1,33 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[7964],{7977:function(n,e,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/published/[docId]",function(){return o(59351)}])},59351:function(n,e,o){"use strict";o.r(e),o.d(e,{Page:function(){return r},__N_SSG:function(){return l}});var t=o(52322),u=o(57643),c=o(14274),i=o(20147),_=o(90221),l=!0;let r=n=>{let{docId:e,doc:o,flags:u}=n;return c.v.DEBUG_ENABLED&&console.log("%c @@@@@@@@@@@@@@@@@@@@@@@ [PublishedPage DESKTOP] docId","background-color: aqua; font-weight: bold",e,o),_.MP.setUA("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"),(0,t.jsx)(i.k,{docId:e,doc:o,flags:u})};e.default=(0,u.v)(r)}},function(n){n.O(0,[9774,7662,8433,2182,2812,8774,6694,4078,3273,9025,5333,4424,8707,146,3661,3016,2545,235,3693,931,2808,6618,216,2252,1537,6656,2681,8794,2285,5830,2888,179],function(){return n(n.s=7977)}),_N_E=n.O()}]);
-//# sourceMappingURL=[docId]-8d0358b72125dd51.js.map
+(self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
+  [7964],
+  {
+    7977: function (n, e, o) {
+      (window.__NEXT_P = window.__NEXT_P || []).push([
+        ["/published/[docId]", function () {
+          return o(59351);
+        }],
+      ]);
+    },
+    59351: function (n, e, o) {
+      "use strict";
+
+      const { default: Page } = o(52322);
+      const { MP.setUA } = o(57643);
+      const { v: DEBUG_ENABLED } = o(14274);
+      const { k: PublishedPage } = o(20147);
+      const { setMP } = o(90221);
+
+      setMP("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36");
+
+      let PublishedPageDesktop = ({ docId, doc, flags }) => {
+        if (DEBUG_ENABLED) {
+          console.log("%c @@@@@@@@@@@@@@@@@@@@@@@ [PublishedPage DESKTOP] docId", "background-color: aqua; font-weight: bold", docId, doc);
+        }
+        return <PublishedPage docId={docId} doc={doc} flags={flags} />;
+      };
+
+      const WrappedPage = (0, Page)(PublishedPageDesktop);
+      e.default = (0, WrappedPage);
+    },
+  },
+]);
